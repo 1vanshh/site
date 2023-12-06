@@ -21,7 +21,7 @@ html, body {
 .first__block{
   padding-top: 30px;
   height: 500px;
-  width: 800px;
+  width: 100%;
   border-radius: 0 0 20px 20px;
   margin-bottom: 30px;
   background: linear-gradient(to bottom, #222224, #2b2a2e);
@@ -32,7 +32,7 @@ html, body {
 .second__block{
   position: relative;
   height: 700px;
-  width: 800px;
+  width: 100%;
   border-radius: 20px 20px 0 0;
   background: linear-gradient(to bottom, #2b2a2e, #222224);
   padding: 20px 15px 15px 15px;
