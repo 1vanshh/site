@@ -4,12 +4,14 @@
   box-sizing: border-box;
 }
 html, body {
+  overscroll-behavior-y: none;
   margin: 0;
   padding: 0;
   background: linear-gradient(to bottom, #201a24, #18131c);
   color: #ffffff;
 }
 .main{
+  height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -18,8 +20,8 @@ html, body {
 }
 
 .first__block{
-  padding-top: 30px;
-  height: 500px;
+  padding-top: 40px;
+  height: 380px;
   width: 100%;
   border-radius: 0 0 20px 20px;
   margin-bottom: 30px;
