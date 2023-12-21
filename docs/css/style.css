@@ -20,12 +20,12 @@ html, body {
 }
 
 .first__block{
-  padding-top: 40px;
-  height: 380px;
+  padding-top: 30px;
+  height: 420px;
   width: 100%;
   border-radius: 0 0 20px 20px;
   margin-bottom: 30px;
-  background: linear-gradient(to bottom, #222224, #2b2a2e);
+  background: linear-gradient(to bottom,  #222224, #2b2a2e);
   text-align: center;
   justify-content: center;
 }
@@ -37,6 +37,17 @@ html, body {
   border-radius: 20px 20px 0 0;
   background: linear-gradient(to bottom, #2b2a2e, #222224);
   padding: 20px 15px 15px 15px;
+}
+
+.contactButton {
+  height: 45px;
+  width: 220px;
+  display: block;
+  background-color: #392e40; 
+  color: #fff;
+  margin: 20px auto;
+  border-radius: 20px;
+  border: 3px solid #18131c;
 }
 
 .person__name{
@@ -102,3 +113,5 @@ img{
 .line{
   border-bottom: 1px #ffffff solid;
 }
+
+

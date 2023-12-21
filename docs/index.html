@@ -38,6 +38,7 @@
             <a class="hero__link" href="tel: +79204091422">
                 <i class='bx bx-phone'></i>
             </a>
+            <button id="contactButton" class="contactButton">Добавить контакт</button>
         </div>
         <div class="second__block">
             <p class="job__year">Стаж работы</p>
@@ -49,6 +50,31 @@
             </p>
         </div>
     </div>
+    <script>
+        var contactButton = document.getElementById('contactButton');
+    
+        contactButton.addEventListener('click', function() {
+            var contactName = 'Шамаева Наталья';  // Имя контакта
+            var phoneNumber = '+79204091422';
+    
+            var vcfContent = 'BEGIN:VCARD\n' +
+                             'VERSION:3.0\n' +
+                             'FN:' + "Шамаева Наталья" + '\n' +
+                             'TEL:' + +79204091422 + '\n' +
+                             'END:VCARD';
+    
+            var blob = new Blob([vcfContent], { type: 'text/vcard;charset=utf-8' });
+    
+            var downloadLink = document.createElement('a');
+            downloadLink.href = window.URL.createObjectURL(blob);
+            downloadLink.download = 'contact.vcf';
+            
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            
+            document.body.removeChild(downloadLink);
+        });
+    </script>
 </body>
 
 </html>
